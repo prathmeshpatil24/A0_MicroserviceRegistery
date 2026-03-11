@@ -1,0 +1,16 @@
+package com.serviceRegistery;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+@SpringBootApplication
+@EnableEurekaServer
+public class MicroserviceServiceRegisteryApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroserviceServiceRegisteryApplication.class, args);
+        System.out.println("Main Server of all microservices");
+	}
+
+}

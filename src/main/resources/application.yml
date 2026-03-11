@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: a0_ServiceRegistery
+
+server:
+  port: 9000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:9000/eureka
+
+#eureka.client.register-with-eureka: false means that this application will not try to register itself with the Eureka registry. Since it is the server, it doesn't need to register with its own instance.
+#
+#eureka.client.fetch-registry: false means that this application will not try to fetch a list of services from the registry. It doesn't need to, because it is the registry itself.
