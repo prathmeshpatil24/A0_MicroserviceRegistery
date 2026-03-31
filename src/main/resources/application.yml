@@ -1,6 +1,9 @@
 spring:
   application:
     name: a0_ServiceRegistery
+  output:
+     ansi:
+      enabled: ALWAYS
 
 server:
   port: 9000
